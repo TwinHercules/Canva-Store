@@ -2,80 +2,204 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navbar {
-    background-color: #20c997;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 150px;
-    text-align: center;
+.header {
+    background-color: hsl(162, 73%, 46%);
+    padding: 25px 120px;
 }
-.navbar a {
-    font-size: 25px;
+.header a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
     color: white;
     text-decoration: none;
-
 }
-.navbar p {
-    font-size: 20px;
+.header p {
+    font-size: 15px;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
 
-.card-container {
+.profil {
+    padding: 40px 120px;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 20px;
+    gap: 30px;
+}
+
+.card-profil {
+    background: url("https://png.pngtree.com/background/20220723/original/pngtree-background-biru-keren-dan-kosong-abstract-untuk-template-desain-powerpoint-ppt-picture-image_1738466.jpg");
+    border: 1px solid black;
+    padding: 20px 20px;
+    max-width: 500px;
+    width: 500px;
+}
+
+.foto {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.foto strong {
+    text-align: center;
+}
+
+.foto img {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.button {
+    display: flex;
+    gap: 5px;
+}
+
+.button p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+    border: 1px solid black;
+    margin: 15px 0px 10px;
+}
+
+.btn-navbar p {
+    border: 1px solid black;
+    padding: 10px 60px;
+    text-align: center;
+    margin: 0px 0px 15px 0px;
+}
+
+.card-container {
+    background-color: #BDDDE4;
+    display: flex;
+    padding: 25px 120px;
+    justify-content: space-between;
 }
 
 .card {
     width: 300px;
-    border: 2px solid #000;
-    border-radius: 10px;
-    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 2px;
     text-align: center;
 }
 
 .card img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
 }
 
 .card-body {
-    padding: 15px;
+    margin: 20px;
 }
 
 .card-title {
+    margin: 10px;
     font-size: 20px;
     font-weight: bold;
 }
 
 .card-text {
+    margin: 10px;
     font-size: 14px;
     color: #555;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    margin-top: 10px;
+.btn p {
+    margin: 0;
+    padding: 10px;
     background-color: #20c997;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
-.btn:hover {
+a {
+    text-decoration: none;
+}
+
+.btn p:hover {
     background-color: #17a589;
 }
 
-@media (max-width: 952px) {
-    .navbar {
-        display: block;
-        justify-content: center;
-        padding: 20px;
+@media (max-width: 1170px) {
+    .header {
+        padding: 25px 70px;
     }
+
+    .profil {
+        flex-direction: column;
+        padding: 40px 70px;
+    }
+    
+    .card-profil {
+        padding: 20px 20px;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .btn-navbar {
+        display: flex;
+        gap: 15px;
+        font-size: 12px;
+    }
+
+    .card-container {
+        padding: 25px 70px;
+        gap: 20px;
+    }
+    
+    .card {
+        border: 1px solid #000;
+        border-radius: 2px;
+        text-align: center;
+    }
+    
+    .card img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+    .card-body {
+        margin: 20px;
+    }
+    
+    .card-title {
+        font-size: 15px;
+    }
+    
+    .card-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .header {
+        padding: 25px 20px;
+    }
+
+    .profil {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+    
+    .card-profil {
+        padding: 20px 20px;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .btn-navbar {
+        gap: 0px;
+        flex-direction: column-reverse;
+    }
+    
+
+    .card-container {
+        justify-content: center;
+        align-items: center;
+        padding: 20px 20px;
+        flex-direction:column;
+    }
+    
 }
